@@ -1,0 +1,54 @@
+
+div {
+
+    width: 400px;
+
+}
+
+table, th, tr, td {
+
+    border: 1px solid;
+
+}
+
+h4 {
+
+    margin-bottom: 0px;
+    text-align: center;
+    font-style: italic;
+
+}
+
+table.table {
+
+    width: 400px;
+
+}
+
+ul {
+
+    font-style: italic;
+
+}
+
+ul.num {
+
+    list-style-type: decimal;
+
+}
+
+ul.circle {
+
+    list-style-type: circle;
+}
+
+ul.roman {
+
+    list-style-type: upper-roman;
+
+}
+
+ul.lower {
+
+    list-style-type: lower-alpha;
+}

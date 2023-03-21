@@ -1,0 +1,53 @@
+body, div.container {
+
+    margin: 0px;
+    padding: 0px;
+
+}
+
+div.cabecalho, div.rodape {
+
+    background-color: lightgreen;
+    display: flex;
+    margin: 4px;
+
+}
+
+div.corpo, div.esquerda, div.direita {
+
+    display: flex;
+    height: 50vh;
+    margin: 2px;
+
+}
+
+div.cont {
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+div.esquerda {
+
+    background-color: gray;
+    flex: 1;
+
+}
+
+div.direita {
+
+    background-color: lightgray;
+    flex: 2;
+
+}
+
+div.rodape {
+
+    margin-top: 8px;
+    height: 5vh;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+}

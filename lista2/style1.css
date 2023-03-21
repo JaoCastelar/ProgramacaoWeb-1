@@ -1,0 +1,104 @@
+body{
+
+    margin: 0%;
+
+}
+
+div.container, div.header, div.body, div.footer {
+
+    display: flex;
+
+}
+
+div.container {
+
+    background-color: rgb(240, 240, 117);
+    flex-direction: column;
+    height: 100vh;
+
+}
+
+div.header {
+
+    background-color: darkgray;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* Início esquerda, meio e direita */
+
+div.esquerda, div.meio, div.direita {
+
+    flex: 1;
+    height: 60vh;
+
+}
+
+div.esquerda {
+
+    background-color: lightcoral;
+    margin-right: 4px;
+
+}
+
+p, h4 {
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+p.conteudo {
+
+    text-align: justify;
+
+}
+
+a {
+
+    text-decoration: none;
+    color: black;
+
+}
+
+a:hover {
+
+    text-decoration: underline;
+    color: lightblue;
+
+}
+
+/* Fim esquerda */
+
+div.meio {
+
+    background-color: lightblue;
+    margin-right: 2px;
+    
+}
+
+div.titulo {
+
+    margin-top: 5%;
+    text-align: center;
+
+}
+
+p.city {
+
+    margin-top: -4%;
+
+}
+
+/* Fim meio */
+
+div.direita {
+
+    background-color: lightgray;
+    margin-left: 2px;
+    
+}
+
+
+
+
