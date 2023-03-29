@@ -1,0 +1,166 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-areas: 
+    'top top top top'
+    'menu tit tit tit'
+    'menu header header header'
+    'menu header header header'
+    'menu bot bot bot'
+    'menu tit2 tit2 tit2'
+    'menu cont4 cont4 cont4';
+    gap: 10px;
+    padding: 10px;
+    height: 100vh;
+    grid-template-columns: 1fr 2fr 2fr 2fr;
+}
+
+.container>div{
+    display: flex;
+}
+
+.top-header {
+    grid-area: top;
+    background-color: rgb(37, 37, 37);
+    height: 8vh;
+    border-radius: 0.5vw;
+}
+.barra {
+    margin-left: 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo, .dash, .acc, .help, .combo {
+    margin-left: 2vw;
+    height: 5vh;
+    background-color: rgb(37, 37, 37);
+    color: white;
+    border: none;
+
+}
+.logo:hover, .dash:hover, .acc:hover, .help:hover, .combo:hover {
+    background-color: rgba(100, 100, 100, 0.8);
+    border-radius: 0.5vw;
+}
+input {
+    margin-left: 2vw;
+    height: 5vh;
+    background-color: rgba(100, 100, 100, 0.8);
+    border-radius: 1vw;
+    border: none;
+}
+
+
+.tit {
+    grid-area: tit;
+    display: flex;
+}
+
+.item1 {
+    grid-area: menu;
+    grid-row-start: 2;
+    grid-row-end: 6;
+    background-color: lightgray;
+    border-radius: 1vw;
+}
+ul {
+    margin: 2vw;
+    font-family: arial, sans-serif;
+}
+li {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: black;
+    
+}
+li:hover {
+    background-color: #2196F3;
+}
+
+.item2 {
+    grid-area: header;
+    align-items: center;
+    background-color: lightgray;
+    border-radius: 1vw;
+}
+.text {
+    margin: 3vw;
+    font-family: arial;
+    text-align: justify;
+}
+h1, h2 {
+    margin-left: 1vw;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    font-family: arial;
+}
+h1.hello{
+    font-size: 80px;
+}
+
+
+.bot-header {
+    grid-area: bot;
+    background-color: lightgray;
+    height: 10vh;
+    border-radius: 0.5vw;
+    display: flex;
+    flex: 1;
+}
+.barra2 {
+    display: flex;
+    flex: 1;
+}
+.inf1, .inf2, .inf3, .inf4 {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    font-family: arial;
+}
+
+.tit2 {
+    grid-area: tit2;
+}
+
+.item6 {
+    grid-area: cont4;
+}
+
+
+button.hello, button.but-cont {
+    margin-top: 2vh;
+    width: 8vw;
+    height: 5vh;
+    border: none;
+    border-radius: 1vw;
+}
+button.hello {
+    background-image: linear-gradient(#2196F3, rgb(62, 62, 236));
+}
+
+.cont {
+    margin: 1vw;
+    text-align: justify;
+    font-family: arial;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td, th {
+    padding-left: 1vw;
+    width: 15vw;
+    height: 10vh;
+    border: 1px solid;
+}
+ 
