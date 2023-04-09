@@ -1,0 +1,69 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+div.container>form {
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+    height: 50vh;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+form.form>div.cont {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    font-weight: bold;
+    font-size: 80%;
+}
+h2 {
+    font-weight: lighter;
+}
+.input, .city, .country {
+    width: 18vw;
+    height: 4vh;
+    padding-left: 0.5vw;
+    margin-left: 1vw;
+}
+.state, .post {
+    width: 6.3vw;
+    height: 4vh;
+    padding-left: 0.5vw;
+}
+.state {
+    margin-left: 1vw;
+}
+input:focus {
+    outline: none;
+    border: 0.1vw solid  rgb(0, 174, 255);
+    border-radius: 0.2vw;
+    box-shadow: 0 0 15px rgba(0, 174, 255, 0.685);
+}
+
+.bot {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: right;
+}
+.save, .cancel {
+    width: 5vw;
+    height: 5vh;
+    border: none;
+    font-weight: bold;
+    border-radius: 0.5vw;
+}
+.save {
+    color: white;
+    background-color: rgb(0, 119, 255);
+}

@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+div.container>div, form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+form {
+    background-color: rgb(0, 213, 228);
+    width: 25vw;
+    height: 65vh;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+}
+
+.input, .check {
+    width: 18vw;
+}
+.input, .message {
+    padding-left: 0.5vw;
+    border: none;
+    box-shadow: 3px 3px 0 rgba(128, 128, 128, 0.644);
+}
+.input, .message::placeholder {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 105%;
+}
+.message::placeholder {
+    padding-top: 1vh;
+    font-size: 120%;
+}
+.input {
+    height: 5vh;
+}
+
+.check {
+    font-size: 80%;
+}
+
+.button {
+    width: 10vw;
+    height: 5vh;
+    background-color: white;
+    color: gray;
+    border: none;
+    font-weight: bolder;
+    box-shadow: 3px 3px 0 rgba(128, 128, 128, 0.644);
+}

@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-areas: 
+    'top top top top'
+    'menu header header header'
+    'menu header header header'
+    'menu tit2 tit2 tit2'
+    'menu cont cont cont'
+    'menu tit3 tit3 tit3'
+    'menu cont2 cont2 cont2'
+    'menu tit4 tit4 tit4'
+    'menu cont3 cont3 cont3'
+    'menu tit5 tit5 tit5'
+    'bot-menu cont4 cont4 cont4'
+    'bot-menu tit6 tit6 tit6'
+    'bot-menu cont5 cont5 cont5'
+    'bot-menu tit7 tit7 tit7'
+    'bot-menu cont6 cont6 cont6'
+    'bot-menu att att att'
+    'bot-menu bot bot bot'
+    'bot-menu tit8 tit8 tit8'
+    'bot-menu cont7 cont7 cont7'
+    'bot-menu att-alt att-alt att-alt'
+    'bot-menu2 bot-alt bot-alt bot-alt'
+    'bot-menu2 tit9 tit9 tit9'
+    'bot-menu2 cont8 cont8 cont8'
+    'bot-menu2 att-flo att-flo att-flo'
+    'bot-menu2 bot-flo bot-flo bot-flo'
+    'bot-menu2 tit10 tit10 tit10'
+    'bot-menu2 cont9 cont9 cont9'
+    'bot-menu2 att-dro att-dro att-dro'
+    'bot-menu2 bot-dro bot-dro bot-dro'
+    'bot-menu2 footer footer footer';
+    gap: 10px;
+    padding: 10px;
+    height: 100vh;
+    grid-template-columns: 1fr 2fr 2fr 2fr;
+}
+
+.container>div{
+    display: flex;
+}
+
+.top-header {
+    grid-area: top;
+    background-color: rgb(37, 37, 37);
+    height: 8vh;
+    border-radius: 0.5vw;
+}
+.barra {
+    margin-left: 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 1vw;
+}
+.logo {
+    width: 3vw;
+}
+.dnd {
+    font-family: "Pirata One";
+    margin-left: 2vw;
+    height: 5vh;
+    background-color: rgb(37, 37, 37);
+    color: rgba(248, 45, 45, 0.904);
+    border: none;
+    font-size: 120%;
+
+}
+.dnd:hover{
+    background-color: rgba(100, 100, 100, 0.8);
+    border-radius: 0.5vw;
+}
+input {
+    margin-left: 2vw;
+    height: 5vh;
+    background-color: rgba(100, 100, 100, 0.8);
+    border-radius: 1vw;
+    border: none;
+    color: white;
+    padding-left: 0.5vw;
+    outline: none;
+}
+
+.tit {
+    grid-area: tit;
+    display: flex;
+}
+
+.item1 {
+    grid-area: menu;
+    grid-row-start: 2;
+    grid-row-end: 6;
+    background-image: linear-gradient(to top, rgb(37, 37, 37), lightgray);
+    border-radius: 1vw;
+}
+ul {
+    margin: 2vw;
+    font-family: arial, sans-serif;
+}
+.ul-top {
+    font-family: "Pirata One";
+    font-size: 150%;
+}
+li {
+    list-style-type: circle;
+}
+.link {
+    text-decoration: none;
+    color: black;
+}
+li:hover {
+    background-color: #f32121;
+}
+
+.bot-menu {
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    grid-area: bot-menu;
+}
+.elf-bot-menu {
+    height: 85vh;
+    width: 25vw;
+    margin-left: -2vw;
+}
+.bot-menu2 {
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    grid-area: bot-menu2;
+}
+
+.item2 {
+    grid-area: header;
+    align-items: center;
+    background-image: linear-gradient(to top, rgb(37, 37, 37), lightgray);
+    border-radius: 1vw;
+    display: flex;
+}
+.img-header {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+.anao {
+    width: 15vw;
+}
+.text {
+    display: flex;
+    margin: 3vw;
+    font-family: arial;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+h1, h2 {
+    margin-left: 1vw;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    font-family: arial;
+}
+h1 {
+    font-family: "Pirata One";
+    font-weight: lighter;
+}
+h2.sub-tit {
+    font-family: "Pirata One";
+    font-weight: lighter;
+}
+h1.hello{
+    font-size: 80px;
+    font-weight: lighter;
+}
+
+.att-nat {
+    grid-area: att;
+}
+
+.bot-header {
+    grid-area: bot;
+    background-color: lightgray;
+    height: 10vh;
+    border-radius: 0.5vw;
+    display: flex;
+    flex: 1;
+}
+.barra2 {
+    display: flex;
+    flex: 1;
+}
+.inf1, .inf2, .inf3, .inf4, .inf5, .inf6 {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    font-family: arial;
+}
+
+.tit2 {
+    grid-area: tit2;
+}
+
+.item6 {
+    grid-area: cont;
+}
+
+.cont, .cont2, .cont3, .cont4, .cont5, .cont6, .cont7, .cont8, .cont9 {
+    margin: 1vw;
+    text-align: justify;
+    font-family: arial;
+}
+
+p.hist {
+    font-style: italic;
+}
+
+.tit3 {
+    grid-area: tit3;
+}
+.item7 {
+    grid-area: cont2;
+}
+
+.tit4 {
+    grid-area: tit4;
+}
+.item8 {
+    grid-area: cont3;
+}
+
+.tit5 {
+    grid-area: tit5;
+}
+.item9 {
+    grid-area: cont4;
+}
+
+.tit6 {
+    grid-area: tit6;
+}
+.item10 {
+    grid-area: cont5;
+}
+
+.tit7 {
+    grid-area: tit7;
+}
+.item11 {
+    grid-area: cont6;
+}
+
+.tit8 {
+    grid-area: tit8;
+}
+.item12 {
+    grid-area: cont7;
+}
+.att-nat-alt {
+    grid-area: att-alt;
+}
+.bot-header-alt {
+    grid-area: bot-alt;
+    background-color: lightgray;
+    height: 10vh;
+    border-radius: 0.5vw;
+    display: flex;
+    flex: 1;
+}
+.barra2-alt {
+    display: flex;
+    flex: 1;
+}
+
+.tit9 {
+    grid-area: tit9;
+}
+.item13 {
+    grid-area: cont8;
+}
+.att-nat-flo {
+    grid-area: att-flo;
+}
+.bot-header-flo {
+    grid-area: bot-flo;
+    background-color: lightgray;
+    height: 10vh;
+    border-radius: 0.5vw;
+    display: flex;
+    flex: 1;
+}
+.barra2-flo {
+    display: flex;
+    flex: 1;
+}
+
+.tit10 {
+    grid-area: tit10;
+}
+.item14 {
+    grid-area: cont9;
+}
+.att-nat-dro {
+    grid-area: att-dro;
+}
+.bot-header-dro {
+    grid-area: bot-dro;
+    background-color: lightgray;
+    height: 10vh;
+    border-radius: 0.5vw;
+    display: flex;
+    flex: 1;
+}
+.barra2-dro {
+    display: flex;
+    flex: 1;
+}
+
+.footer {
+    grid-area: footer;
+}

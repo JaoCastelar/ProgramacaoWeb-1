@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to top, rgb(37, 37, 37), lightgray);
+}
+
+div.container>form, div.img {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+form {
+    align-items: center;
+    justify-content: center;
+}
+div.img {
+    width: 35vw;
+}
+
+div.tit {
+    display: flex;
+}
+.logo {
+    width: 3vw;
+}
+h1 {
+    margin-left: 1vw;
+    font-family: "Pirata One";
+    font-weight: lighter;
+    font-size: 250%;
+    width: 17.497vw;
+}
+
+input {
+    padding: 0.5vw;
+    height: 5vh;
+    width: 17.497vw;
+}
+textarea {
+    padding: 0.5vw;
+}
+input, textarea {
+    width: 25vw;
+}
+input::placeholder, textarea::placeholder {
+    font-family: "Pirata One";
+    font-size: 120%;
+}
+
+.button {
+    background-color: rgba(248, 45, 45, 0.904);
+    border: none;
+    color: white;
+    font-family: "Pirata One";
+    font-size: 120%;
+    box-shadow:  0 0 10px black;
+}
+
+.button:hover {
+    box-shadow: none;
+}

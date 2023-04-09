@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-areas: 
+    'top top top top'
+    'menu header header header'
+    'menu header header header';
+    gap: 10px;
+    padding: 10px;
+    height: 100vh;
+    grid-template-columns: 1fr 2fr 2fr 2fr;
+    background-color: black;
+}
+
+.container>div{
+    display: flex;
+}
+
+.top-header {
+    grid-area: top;
+    background-color: rgb(37, 37, 37);
+    height: 8vh;
+    border-radius: 0.5vw;
+}
+.barra {
+    margin-left: 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 1vw;
+}
+.logo {
+    width: 3vw;
+}
+.dnd {
+    font-family: "Pirata One";
+    margin-left: 2vw;
+    height: 5vh;
+    background-color: rgb(37, 37, 37);
+    color: rgba(248, 45, 45, 0.904);
+    border: none;
+    font-size: 120%;
+
+}
+.dnd:hover{
+    background-color: rgba(100, 100, 100, 0.8);
+    border-radius: 0.5vw;
+}
+input {
+    margin-left: 2vw;
+    height: 5vh;
+    background-color: rgba(100, 100, 100, 0.8);
+    border-radius: 1vw;
+    border: none;
+    color: white;
+    padding-left: 0.5vw;
+    outline: none;
+}
+
+.tit {
+    grid-area: tit;
+    display: flex;
+}
+
+.item1 {
+    grid-area: menu;
+    grid-row-start: 2;
+    grid-row-end: 6;
+    background-image: linear-gradient(to top, rgb(37, 37, 37), lightgray);
+    border-radius: 1vw;
+}
+ul {
+    margin: 2vw;
+    font-family: arial, sans-serif;
+}
+.ul-top {
+    font-family: "Pirata One";
+    font-size: 150%;
+}
+li {
+    list-style-type: circle;
+}
+.link {
+    text-decoration: none;
+    color: black;
+}
+li:hover {
+    background-color: #f32121;
+}
+
+.item2 {
+    position: absolute;
+    grid-area: header;
+    display: flex;
+    padding-top: 0;
+    position: relative;
+    border-radius: 1vw;
+}
+
+
+.text {
+    margin: 3vw;
+    font-family: arial;
+    text-align: justify;
+}
+h1, h2 {
+    margin-left: 1vw;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    font-family: arial;
+}
+h1 {
+    font-family: "Pirata One";
+}
+h1.hello{
+    margin-top: -10vh;
+    margin-left: -5vh;
+    font-size: 1000%;
+    font-weight: lighter;
+    color: white;
+}
+p.cont {
+    color: white;
+    margin-top: -1vh;
+    margin-left: -5vh;
+}
+div.img {
+    position: relative;
+}
+.drag {
+    width: 45vw;
+}
+
+.cont {
+    margin: 1vw;
+    text-align: justify;
+    font-family: arial;
+}
+ 
