@@ -1,0 +1,63 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 60vh;
+}
+
+.cracha {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 18%;
+    height: 60vh;
+    border-radius: 1vw;
+    box-shadow: 1px 1px 10px 10px rgba(0, 0, 0, 0.137);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.trasso {
+    background-color: black;
+    margin-top: 5%;
+    width: 20%;
+    height: 2vh;
+    border-radius: 1vw;
+}
+.trasso2 {
+    background-color: rgb(119, 119, 119);
+    width: 100%;
+    height: 3vh;
+}
+
+.nomeFun {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+}
+.fun {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    border-bottom-right-radius: 1vw;
+    border-bottom-left-radius: 1vw;
+}
+
+h2, p {
+    color: rgb(131, 131, 131);
+}
+
+p {
+    margin-bottom: 20%;
+}
+
+#nomeFun, #func {
+    color: white;
+}

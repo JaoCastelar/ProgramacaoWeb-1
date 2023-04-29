@@ -1,0 +1,33 @@
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.container>div {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+}
+
+#cont1 {
+    background-color: lightblue;
+    display: none;
+}
+#cont2 {
+    background-color: lightgreen;
+    display: none;
+}
+#cont3 {
+    background-color: coral;
+    display: none;
+}
+#cont4 {
+    background-color: lightyellow;
+    display: none;
+}
