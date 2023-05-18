@@ -5,6 +5,7 @@ let table = document.getElementById("table");
 let cartela = []
 
 function geraCartela() {
+
     for (let i = 0; i < table.rows.length; i++) {
         for (let j = 0; j < table.rows[i].cells.length; j++) {
             
@@ -60,21 +61,25 @@ bot1.addEventListener("click", function() {
     
     bot1.remove()
     
+    
     let interval = setInterval(function () {
         
         if (cells == 24) {
-            clearInterval(interval);
+            if (win == true) {
+                clearInterval(interval);
+            }
         }
 
         if (pokeSorted.length == 100) {
             clearInterval(interval);
-            alert("Você perdeu, quem sabe na próxima");
+            alert("Você perdeu, quem sabe na próxima.");
             location.reload();
         }
         
         poke = Math.floor(Math.random() * 100) + 1;
-        while(pokeSorted.includes(poke))
-        poke = Math.floor(Math.random() * 100) + 1;
+        while(pokeSorted.includes(poke)){
+            poke = Math.floor(Math.random() * 100) + 1;
+        }
         
         let url = `https://pokeapi.co/api/v2/pokemon/${poke}`;
         
@@ -107,6 +112,7 @@ bot1.addEventListener("click", function() {
 
 let cells = 0;
 let contBot = 0;
+let win = false;
 
 let cell1 = document.getElementById("1-1");
 let cell2 = document.getElementById("1-2");
@@ -188,10 +194,11 @@ function checaPoke(cell) {
             
             if (ganhar == 25) {
                 alert("Você ganhou!!!");
+                win = true;
+                location.reload();
             }else {
-                alert("Você perdeu, quem sabe na próxima");
+                alert("Você perdeu, continue tentando.");
             }
-            location.reload();
         });
         
         bots.appendChild(bot2);
